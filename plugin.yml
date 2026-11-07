@@ -1,0 +1,26 @@
+name: CCTVMode
+version: 1.0.0
+main: com.example.cctvmode.CctvModePlugin
+api-version: '1.21'
+description: Staff spectator mode with temporary moderation powers.
+commands:
+  cctvmode:
+    description: Toggle CCTV (spectator moderation) mode
+    usage: /cctvmode
+    permission: cctv.use
+  ban:
+    description: Ban a player with reason and duration (CCTV mode)
+    usage: /ban <player> [reason] [duration]
+  mute:
+    description: Mute a player (CCTV mode only)
+    usage: /mute <player> [reason]
+  unmute:
+    description: Unmute a player (CCTV mode only)
+    usage: /unmute <player>
+  warn:
+    description: Warn a player (CCTV mode only)
+    usage: /warn <player> [reason]
+permissions:
+  cctv.use:
+    description: Allows using /cctvmode
+    default: op

@@ -1,0 +1,3 @@
+# Teleport staff back to where they were when they leave CCTV mode.
+# Prevents using CCTV mode to hop to a player's base and then go back to survival.
+return-to-original-location: true
